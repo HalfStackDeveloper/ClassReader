@@ -32,10 +32,10 @@ public class ClassReader {
             int constant_pool_count = U2.read(inputStream);
             ConstantPool constantPool = new ConstantPool(constant_pool_count);
             constantPool.read(inputStream);
-            classFile.accessFlag = U2.read(inputStream);
 
 
             //获取类信息
+            classFile.accessFlag = U2.read(inputStream);
             int classIndex = U2.read(inputStream);
             ConstantClass clazz = (ConstantClass) constantPool.cpInfo[classIndex];
             ConstantUtf8 className = (ConstantUtf8) constantPool.cpInfo[clazz.nameIndex];
