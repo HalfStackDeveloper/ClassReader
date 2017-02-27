@@ -18,5 +18,9 @@ public class ExceptionTable {
         endPc = U2.read(inputStream);
         handlerPc = U2.read(inputStream);
         catchType = U2.read(inputStream);
+        
+        //这里可以增加一个输出输出异常范围的功能
+        
+        
     }
 }

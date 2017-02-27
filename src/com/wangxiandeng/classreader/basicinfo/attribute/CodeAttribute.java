@@ -29,6 +29,8 @@ public class CodeAttribute extends AttributeInfo {
     @Override
     public void read(InputStream inputStream) {
         length = (int) U4.read(inputStream);
+        
+        //这里可以增加一个输出maxStack、maxLocal的功能
         maxStack = U2.read(inputStream);
         maxLocals = U2.read(inputStream);
         codeLength = (int) U4.read(inputStream);

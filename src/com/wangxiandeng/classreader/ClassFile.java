@@ -10,6 +10,7 @@ public class ClassFile {
     public int minorVersion;
     public int majorVersion;
     public ConstantPool constantPool;
+     //??pool count
     public int accessFlag;
     public String className;
     public String superClass;
