@@ -30,7 +30,7 @@ public abstract class ConstantInfo {
     public static ConstantInfo getConstantInfo(short tag) {
         switch (tag) {
             case CONSTANT_Class:
-                return new ConstantClass();
+               return new ConstantClass();   
             case CONSTANT_Fieldref:
             case CONSTANT_Methodref:
             case CONSTANT_InterfaceMethodref:
@@ -55,6 +55,7 @@ public abstract class ConstantInfo {
                 return new ConstantMethodType();
             case CONSTANT_InvokeDynamic:
                 return new ConstantInvokeDynamic();
+                //这里是不是有个缺陷？？
         }
         return null;
     }

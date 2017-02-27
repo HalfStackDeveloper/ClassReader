@@ -20,6 +20,7 @@ public class AttributeInfo extends BasicInfo {
     public static final String CODE = "Code";
 
     public AttributeInfo(ConstantPool cp, int nameIndex) {
+    	
         super(cp);
         this.nameIndex = nameIndex;
     }
